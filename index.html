@@ -1,23 +1,63 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
+
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Bootstrap Visualization Dashboard</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <a href="https://www.google.com/search?q=pitbulls&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKi6mf4PLcAhUMTt8KHUp7AsUQ_AUICigB&biw=1536&bih=728"><img alt="John" src="meadow.jpg" width="300"></a>
-       <br>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-  <br>
-  <ul>
-    <li><a href="https://github.com/johngiglio" target="_blank">My Github</a></li>
-    <li><a href="https://www.linkedin.com/in/jrgiglio/" target="_blank">LinkedIn</a></li>
-  </ul>
-  
-  <a href="https://johngiglio.github.io/SecondWebpage">Go to my second webpage</a>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Latitude</a> 
+          </div>
+          <ul class="navbar-nav mr-auto">
+              <li>
+                  <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" 
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                
+                  </div>
+                  </div>
+                
+              </li>
+              <li><a class="btn btn-secondary" type="button" href="#">
+                Comparison</a></li>
+              <li><a class="btn btn-secondary" type="button" href="#">
+                  Data</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <div class="navbar">
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+        </div>     -->
+    <h2>Summary: Latitude vs. X</h2>
+    <p>The purpose of this project was to analyze how weater changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assembble a dataset on over 500 cities.</p>
+    <p>After assembling the dataset we used Matploitliv to plot various aspects of the weather vs.. latitude. Factors we looked at included temperature, cloudiness. wind speed, and humidity. This site provides the source data and visualizations created as aprt of the analysis, as well as explanations and ddescriptions of any trends and correlations witnessed.</p>
 </body>
-
 </html>
