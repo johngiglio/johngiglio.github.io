@@ -11,6 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,14 +36,30 @@
                   </div>
                 
               </li>
-              <li><a class="btn btn-secondary" type="button" href="#">
+              <li><a class="btn btn-secondary" type="button" href="comparison.html">
                 Comparison</a></li>
-              <li><a class="btn btn-secondary" type="button" href="#">
+              <li><a class="btn btn-secondary" type="button" href="data.html">
                   Data</a></li>
           </ul>
+
         </div>
-      </nav>
-      <h2>Temperature vs. Latitude</h2>
-      <img src="Fig4.png">
+      </nav>      
+      <div class="container">
+    <header class="header">
+      <h2>Wind Speed vs. Latitude</h2>
+    </header>
+
+    <table id="wrapper">
+        <tr>
+          <td><img src="Fig4.png"></td>
+        </tr>
+        <tr>
+        <td><p class="desc">There does not appear to be any obvious relationship between latitude and wind speed. Wind speed is likely closer 
+          related to other factors such as terrain, elevation, etc.</p></td>
+      </tr>
+      </table>
+    
+      
+    </div>
     </body>
     </html>
